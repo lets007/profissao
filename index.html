@@ -238,4 +238,390 @@
             background-color: white;
         }
         
+        .passos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        
+        .passo {
+            flex: 0 0 48%;
+            background-color: var(--light);
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .passo-num {
+            background-color: var(--primary);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        /* Seção especializacoes */
+        .especializacoes {
+            background-color: var(--light);
+        }
+        
+        .especializacoes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .especializacao-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .especializacao-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .especializacao-img {
+            height: 180px;
+            background-color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+        
+        .especializacao-content {
+            padding: 25px;
+        }
+        
+        .especializacao-content h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        /* Rodapé */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            
+            nav .container {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav li {
+                margin: 5px 10px;
+            }
+            
+            .sobre-content {
+                flex-direction: column;
+            }
+            
+            .sobre-img {
+                width: 100%;
+                margin-top: 30px;
+            }
+            
+            .passo {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Educação Física</h1>
+            <p>Descubra tudo sobre esta profissão que promove saúde, qualidade de vida e bem-estar através do movimento humano.</p>
+            <a href="#sobre" class="btn">Conheça Mais</a>
+        </div>
+    </header>
     
+    <!-- Navegação -->
+    <nav>
+        <div class="container">
+            <div class="logo">Edu<span>Física</span></div>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#requisitos">O que Precisa</a></li>
+                <li><a href="#ingresso">Como Ingressar</a></li>
+                <li><a href="#especializacoes">Especializações</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Seção Sobre -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre a Profissão</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>O profissional de Educação Física é responsável por promover a saúde e a capacidade física das pessoas através da prática de atividades corporais. Sua atuação vai muito além de academias e escolas, abrangendo desde a reabilitação de pacientes até o treinamento de atletas de alto rendimento.</p>
+                    <p>Este profissional pode atuar em diversas áreas como personal trainer, preparador físico, professor em escolas, academias, clubes, hospitais e muito mais. O objetivo principal é melhorar a qualidade de vida das pessoas através do exercício físico orientado.</p>
+                    <p>A profissão é regulamentada pela Lei nº 9.696/1998, que criou o Conselho Federal de Educação Física (CONFEF) e os Conselhos Regionais (CREFs), responsáveis pela fiscalização do exercício profissional.</p>
+                </div>
+                <div class="sobre-img">
+                    🏃‍♂️
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção Requisitos -->
+    <section id="requisitos" class="requisitos">
+        <div class="container">
+            <h2>O Que é Preciso Para Ser Um Educador Físico</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>📚 Formação Acadêmica</h3>
+                    <p>É necessário ter diploma de graduação em Educação Física (licenciatura ou bacharelado) em instituição de ensino superior reconhecida pelo MEC.</p>
+                    <p>A licenciatura forma professores para atuar na educação básica, enquanto o bacharelado prepara para atuação em academias, clubes, clínicas, etc.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>📝 Registro Profissional</h3>
+                    <p>Após a formação, é obrigatório obter o registro no Conselho Regional de Educação Física (CREF) da sua região para exercer a profissão legalmente.</p>
+                    <p>O registro garante que o profissional está habilitado e em dia com as exigências legais da categoria.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>💪 Habilidades e Competências</h3>
+                    <p>É fundamental ter boa comunicação, empatia, conhecimento técnico-científico, capacidade de liderança e motivação.</p>
+                    <p>Também é importante ter interesse por atividades físicas, conhecimento sobre o corpo humano e capacidade de planejamento.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>🔄 Atualização Constante</h3>
+                    <p>A área de Educação Física está em constante evolução, por isso é importante participar de cursos, palestras e congressos para se manter atualizado.</p>
+                    <p>Pós-graduações e especializações também são diferenciais importantes para o mercado de trabalho.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção Ingresso -->
+    <section id="ingresso" class="ingresso">
+        <div class="container">
+            <h2>Como Ingressar na Profissão</h2>
+            <p>O caminho para se tornar um profissional de Educação Física envolve algumas etapas importantes:</p>
+            
+            <div class="passos">
+                <div class="passo">
+                    <div class="passo-num">1</div>
+                    <div>
+                        <h3>Escolha Entre Licenciatura ou Bacharelado</h3>
+                        <p>Decida se quer atuar como professor (licenciatura) ou em outras áreas como academias, clubes e clínicas (bacharelado).</p>
+                    </div>
+                </div>
+                
+                <div class="passo">
+                    <div class="passo-num">2</div>
+                    <div>
+                        <h3>Ingressar na Faculdade</h3>
+                        <p>Faça o vestibular ou utilize sua nota do ENEM para ingressar em uma instituição de ensino superior reconhecida pelo MEC.</p>
+                    </div>
+                </div>
+                
+                <div class="passo">
+                    <div class="passo-num">3</div>
+                    <div>
+                        <h3>Concluir a Graduação</h3>
+                        <p>Complete o curso, que geralmente tem duração de 4 anos, cumprindo todas as disciplinas e estágios obrigatórios.</p>
+                    </div>
+                </div>
+                
+                <div class="passo">
+                    <div class="passo-num">4</div>
+                    <div>
+                        <h3>Obter o Registro Profissional</h3>
+                        <p>Após a formatura, solicite seu registro no Conselho Regional de Educação Física (CREF) da sua região.</p>
+                    </div>
+                </div>
+                
+                <div class="passo">
+                    <div class="passo-num">5</div>
+                    <div>
+                        <h3>Buscar Especializações</h3>
+                        <p>Considere fazer pós-graduações ou cursos de especialização para se destacar no mercado de trabalho.</p>
+                    </div>
+                </div>
+                
+                <div class="passo">
+                    <div class="passo-num">6</div>
+                    <div>
+                        <h3>Iniciar na Carreira</h3>
+                        <p>Comece a atuar na área escolhida, seja como empregado ou abrindo seu próprio negócio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção Especializações -->
+    <section id="especializacoes" class="especializacoes">
+        <div class="container">
+            <h2>Áreas de Especialização</h2>
+            <p>O educador físico pode se especializar em diversas áreas, ampliando suas oportunidades de atuação:</p>
+            
+            <div class="especializacoes-grid">
+                <div class="especializacao-card">
+                    <div class="especializacao-img">💪</div>
+                    <div class="especializacao-content">
+                        <h3>Personal Trainer</h3>
+                        <p>Atendimento individualizado para elaboração e acompanhamento de treinos personalizados, geralmente em academias ou ao ar livre.</p>
+                    </div>
+                </div>
+                
+                <div class="especializacao-card">
+                    <div class="especializacao-img">🏥</div>
+                    <div class="especializacao-content">
+                        <h3>Reabilitação</h3>
+                        <p>Atuação junto a equipes multidisciplinares na recuperação de pacientes com lesões ou condições de saúde específicas.</p>
+                    </div>
+                </div>
+                
+                <div class="especializacao-card">
+                    <div class="especializacao-img">👶</div>
+                    <div class="especializacao-content">
+                        <h3>Educação Física Escolar</h3>
+                        <p>Atuação como professor em escolas de educação básica, desenvolvendo atividades físicas e esportivas com crianças e adolescentes.</p>
+                    </div>
+                </div>
+                
+                <div class="especializacao-card">
+                    <div class="especializacao-img">🏊‍♀️</div>
+                    <div class="especializacao-content">
+                        <h3>Esportes Aquáticos</h3>
+                        <p>Especialização em natação, hidroginástica e outras atividades aquáticas para diferentes públicos e objetivos.</p>
+                    </div>
+                </div>
+                
+                <div class="especializacao-card">
+                    <div class="especializacao-img">👵</div>
+                    <div class="especializacao-content">
+                        <h3>Exercício para Grupos Especiais</h3>
+                        <p>Atendimento a idosos, gestantes, pessoas com deficiência ou com condições de saúde específicas como diabetes, hipertensão, etc.</p>
+                    </div>
+                </div>
+                
+                <div class="especializacao-card">
+                    <div class="especializacao-img">🏆</div>
+                    <div class="especializacao-content">
+                        <h3>Treinamento Esportivo</h3>
+                        <p>Preparação física de atletas e equipes esportivas, com foco no alto rendimento e competições.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Educação Física</h3>
+                    <p>Um guia completo sobre a profissão que transforma vidas através do movimento.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#sobre">Sobre a Profissão</a></li>
+                        <li><a href="#requisitos">O que Precisa</a></li>
+                        <li><a href="#ingresso">Como Ingressar</a></li>
+                        <li><a href="#especializacoes">Especializações</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Recursos Úteis</h3>
+                    <ul>
+                        <li><a href="#">CONFEF - Conselho Federal</a></li>
+                        <li><a href="#">Faculdades Reconhecidas</a></li>
+                        <li><a href="#">Legislação da Profissão</a></li>
+                        <li><a href="#">Mercado de Trabalho</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Educação Física - Guia da Profissão. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
